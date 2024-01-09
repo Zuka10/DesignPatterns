@@ -42,7 +42,7 @@ public class CarFactory
             case "mercedes":
                 return new Mercedes();
             default:
-                throw new ArgumentException("Car Type is invalid.");
+                throw new ArgumentException($"Invalid car type: {carType}");
         }
     }
 }
